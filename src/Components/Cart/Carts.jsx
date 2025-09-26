@@ -13,29 +13,32 @@ const Cart = ({ CARD }) => {
             <span
               className={`font-bold items-center ${
                 CARD.status == "In-Progress"
-                  ? `  text-yellow-500 bg-amber-100 p-2 rounded-md`
+                  ? `  text-yellow-500 bg-amber-100 p-2 rounded-2xl `
                   : CARD.status == "Open"
-                  ? "text-green-600 bg-green-100 p-2  rounded-md"
-                  : "text-red-800 bg-red-100 "
+                  ? "text-green-600 bg-green-100 p-2 text-center rounded-2xl w-[100px]"
+                  : "text-yellow-500 bg-amber-100 p-2 rounded-2xl "
               }`}
             >
               {CARD.status}
             </span>
           </div>
-          <h1 className="text-gray-500 w-[400px]">{CARD.description}</h1>
-          <div className="flex justify-between ">
-            <h1
-              className={`${
-                CARD.priority == "HIGH PRIORITY"
-                  ? "text-red-500"
-                  : CARD.priority == "MEDIUM PRIORITY"
-                  ? "text-yellow-500"
-                  : "text-green-500 bg"
-              } mt-2 mb-4 font-semibold`}
-            >
-              {" "}
-              {CARD.priority}
-            </h1>
+          <h1 className="text-gray-500 w-[400px] mt-2">{CARD.description}</h1>
+          <div className="flex justify-between mt-3">
+            <div className="flex items-center justify-center">
+              <p className="mb-2.5">#{CARD.id}</p>
+              <h1
+                className={`ml-2.5  ${
+                  CARD.priority == "HIGH PRIORITY"
+                    ? "text-red-500"
+                    : CARD.priority == "MEDIUM PRIORITY"
+                    ? "text-yellow-500"
+                    : "text-green-600 bg"
+                } mt-3 mb-4 font-semibold`}
+              >
+                {" "}
+                {CARD.priority}
+              </h1>
+            </div>
             <div
               className="flex items-center
           "
