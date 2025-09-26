@@ -12,7 +12,7 @@ const Main = () => {
                 <img className="md:block hidden" src={bg1} alt="" />
               </div>
               <div className="text-stone-200 h-[240px] flex flex-col items-center justify-center">
-                <h1 className="font-bold md:text-[20px] ">In-Progress</h1>
+                <h1 className="font-bold text-3xl ">In-Progress</h1>
                 <p className="font-semibold md:text-4xl">0</p>
               </div>
               <div>
@@ -25,8 +25,8 @@ const Main = () => {
               <div>
                 <img className="md:block hidden" src={bg1} alt="" />
               </div>
-              <div className="text-stone-200 h-[200px] flex flex-col items-center justify-center">
-                <h1 className="font-bold md:text-[20px] ">Resolved</h1>
+              <div className="text-stone-200 h-[240px] flex flex-col items-center justify-center">
+                <h1 className="font-bold text-3xl ">Resolved</h1>
                 <p className="font-semibold md:text-4xl">0</p>
               </div>
               <div>

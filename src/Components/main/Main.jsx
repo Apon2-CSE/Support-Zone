@@ -9,9 +9,18 @@ const Main = ({ FetchName }) => {
   return (
     <>
       <Count></Count>
+      <div className="flex justify-between container mx-auto mt-6">
+        <div>
+          <h1 className="text-2xl md:text-3xl font-bold p-3 md:text-left ml-5 md:p-4">
+            Customer Tickets
+          </h1>
+        </div>
 
-      <div className=" flex justify-between container mx-auto mb-4">
-        <h1 className="text-2xl md:text-4xl font-bold p-3">Customer Tickets</h1>
+        <div className="mr-[320px] ">
+          <h1 className="text-2xl md:text-3xl font-semibold p-3 md:block hidden ">
+            Task Status
+          </h1>
+        </div>
       </div>
 
       <div className=" container mx-auto grid grid-cols-1 md:grid-cols-12 gap-4   ">
@@ -24,14 +33,14 @@ const Main = ({ FetchName }) => {
         </div>
 
         <div className="col-span-1 md:col-span-2 ">
-          <div>
-            <h1 className="text-[40px] md:text-4xl font-semibold p-3">
+          <div className="ml-6">
+            <h1 className="text-2xl md:text-4xl font-semibold block md:hidden">
               Task Status
             </h1>
-            <p>Select a ticket to add to Task Status</p>
+            <p>No In-Progress tasks yet.</p>
           </div>
-          <div>
-            <h1 className="text-[40px] md:text-4xl font-semibold p-3">
+          <div className="ml-5">
+            <h1 className="text-[35px] md:text-4xl font-semibold ">
               {" "}
               Resolved Task{" "}
             </h1>
