@@ -10,8 +10,8 @@ const Cart = ({ CARD }) => {
         <div className="m-5">
           <div className="flex justify-between pt-4  ">
             <span className="text-[20px ] font-bold  ">{CARD.title}</span>
-            <span
-              className={`font-bold items-center ${
+            <button
+              className={`font-bold items-center flex items-center space-x-2 px-4 py-1  font-semibold rounded-full shadow-md ${
                 CARD.status == "In-Progress"
                   ? `  text-yellow-500 bg-amber-100 p-2 rounded-2xl `
                   : CARD.status == "Open"
@@ -19,8 +19,13 @@ const Cart = ({ CARD }) => {
                   : "text-yellow-500 bg-amber-100 p-2 rounded-2xl "
               }`}
             >
+              <span
+                className={`w-3 h-3 rounded-full mr-2 ${
+                  CARD.status == "Open" ? "bg-green-600" : "bg-yellow-600"
+                }`}
+              ></span>
               {CARD.status}
-            </span>
+            </button>
           </div>
           <h1 className="text-gray-500 w-[400px] mt-2">{CARD.description}</h1>
           <div className="flex justify-between mt-3">
