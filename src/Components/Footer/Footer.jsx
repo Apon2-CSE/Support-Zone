@@ -65,7 +65,7 @@ const Footer = () => {
           </div>
         </div>
         <p
-          className="  max-w-[1200px]  mx-auto border-b-2 border-gray-400 
+          className="  max-w-[1600px]  mx-auto border-b-2 border-gray-400 
         m-4
         "
         ></p>
